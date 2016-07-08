@@ -15,9 +15,13 @@ Ec3k tcp json server.
 
 optional arguments:
 	-h, --help            show this help message and exit
+
 	-f FREQUENCY, --frequency FREQUENCY
+
 	-a ADDRESS, --address ADDRESS
+
 	-p PORT, --port PORT
+
 
 The -f/--frequency argument is used to set the radio frequency 
 		(default: 868.320e6)

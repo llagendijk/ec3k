@@ -2,33 +2,37 @@ Software receiver server for EnergyCount 3000
 =============================================
 
 This server allows you to receive and decode radio transmissions from
-EnergyCount 3000 energy loggers using a RTL-SDR supported radio receiver 
+EnergyCount 3000 energy loggers using a RTL-SDR supported radio receiver
 and the ec3k module and send the information as json telegrams to users
 over a TCP connection.
 
 Usage:
 ------
 # ec3k-server --help
+
 usage: ec3k-server [-h] [-f FREQUENCY] [-a ADDRESS] [-p PORT]
 
 Ec3k tcp json server.
 
 optional arguments:
-	-h, --help            show this help message and exit
 
-	-f FREQUENCY, --frequency FREQUENCY
+        -h, --help   show this help message and exit
 
-	-a ADDRESS, --address ADDRESS
+        -f FREQUENCY, --frequency FREQUENCY
 
-	-p PORT, --port PORT
+        -a ADDRESS, --address ADDRESS
+
+        -p PORT, --port PORT
 
 
-The -f/--frequency argument is used to set the radio frequency 
-		(default: 868.320e6)
-The -a/--address are used to set the listen address for the server 
-		(default 127.0.0.1)
-The -p/--port adre used to set the listen port for the server 
-		(default 3001)
+The -f/--frequency argument is used to set the radio frequency
+                (default: 868.320e6)
+
+The -a/--address options are used to set the listen address for the server
+                (default 127.0.0.1)
+
+The -p/--port options are used to set the listen port for the server
+                (default 3001)
 
 
 Requirements
@@ -56,7 +60,7 @@ You can get a local copy of the development repository with::
 
 
 License
--------
+
 ec3k-server, the server software:
 
 Copyright (C) 2016 Louis Lagendijk <louis.lagendijk@gmail.com>

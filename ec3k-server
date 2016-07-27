@@ -62,7 +62,7 @@ class TcpSocket:
 
                 # copy relevant values from status so we can dump as json
                 return json.dumps(
-                {
+                    {
                         "id" : hex(status.id)[2:],
                         "data" : {
                                 "time_total" : status.time_total,
@@ -72,7 +72,8 @@ class TcpSocket:
                                 "power_max" : status.power_max,
                                 "reset_counter" : status.reset_counter
                         }
-                }, indent = 2) + "\n"
+                    }
+		) + "\n"
                 
         def _process_data(self):
                 
